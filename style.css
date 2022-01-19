@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #ffc8a3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.library {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.book {
+  max-width: 250px;
+  min-width: 200px;
+  width: 20%;
+  margin: 5px;
+  padding: 10px;
+  background-color: cornsilk;
+  height: 30vh;
+  box-shadow: 0px 0px 5px 5px #ffb18d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
+  position: relative;
+}
+
+.book-title {
+  font-size: 1.5em;
+  text-align: center;
+  height: 30%;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 1.2em;
+  height: 30%;
+}
+
+.add-book {
+  height: 5vh;
+  font-size: 2em;
+  border: 0;
+  background-color: thistle;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.add-book:hover {
+  background-color: tomato;
+}
+
+.modal {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.487);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-wrapper {
+  width: 30vw;
+  max-width: 450px;
+  min-width: 270px;
+  height: 50vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0px;
+  margin-bottom: 20vh;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px #00000080;
+  justify-content: space-between;
+}
+
+h2 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.modal-wrapper form {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"],
+input[type="number"] {
+  margin: 10px 0;
+  line-height: 1.2em;
+  font-size: 1.1em;
+}
+
+label {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.new-book-submit {
+  height: 5vh;
+  width: 100%;
+  border: 0;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgb(213, 96, 96);
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  padding: 1vh;
+}
+
+.new-book-submit:hover {
+  background-color: cadetblue;
+}
+
+.book-close-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 5px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  color: #2dff68;
+  background: cornflowerblue;
+  border-radius: 5px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.book-close-button:hover {
+  background: cadetblue;
+}
+
+.book-read {
+  padding: 3px;
+  border: 2px dotted rgb(255, 220, 115);
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.book-read:hover {
+  border: 2px dotted rgb(255, 175, 104);
+}
